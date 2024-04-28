@@ -3,7 +3,7 @@
         "title": ["",{"translate": "lodestone_teleport.advancement.teleport.first.title", "fallback": "Your first teleportation! F"}],
         "description": ["",{"translate": "lodestone_teleport.advancement.teleport.first.description", "fallback": "Luckily you arived at the destination in one piece. F","color": "gold"}],
         "icon": {
-            "item": "compass",
+            "item": "minecraft:compass",
             "nbt": "{LodestoneTracked:true}"
         },
         "show_toast": true,

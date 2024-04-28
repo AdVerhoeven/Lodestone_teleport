@@ -3,8 +3,7 @@
         "title": "lodestone_teleport",
         "description": "A datapack that allows teleporting across the 3 base dimensions using lodestones and compassses.",
         "icon": {
-            "item": "minecraft:lodestone",
-            "nbt": "{Enchantments:[{\"id\":\"unbreaking\"}]}"
+            "item": "minecraft:lodestone"
         },
         "show_toast": false,
         "announce_to_chat": false
