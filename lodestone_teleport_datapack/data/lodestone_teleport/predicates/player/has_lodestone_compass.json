@@ -3,6 +3,15 @@
     "entity": "this",
     "predicate": {
       "type": "minecraft:player",
-      "nbt": "{SelectedItem:{id:\"minecraft:compass\",tag:{LodestoneTracked:1b}}}"
+      "equipment": {
+        "mainhand": {
+          "item": "minecraft:compass",
+          "components": {
+            "minecraft:lodestone_tracker": {
+              "tracked": true
+            }
+          }
+        }
+      }
     }
 }

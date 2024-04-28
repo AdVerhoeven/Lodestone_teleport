@@ -3,8 +3,8 @@
         "title": ["",{"translate": "lodestone_teleport.advancement.teleport.first.title", "fallback": "Your first teleportation! F"}],
         "description": ["",{"translate": "lodestone_teleport.advancement.teleport.first.description", "fallback": "Luckily you arived at the destination in one piece. F","color": "gold"}],
         "icon": {
-            "item": "minecraft:compass",
-            "nbt": "{LodestoneTracked:true}"
+            "id": "minecraft:compass",
+            "components": "minecraft:lodestone_tracker"
         },
         "show_toast": true,
         "announce_to_chat": true,
@@ -18,7 +18,7 @@
                 "items": [
                     {
                         "items": ["compass"],
-                        "nbt": "{tag:{LodestoneTracked:1b}}"
+						"components": "minecraft:lodestone_tracker"
                     }
                 ]
             }

@@ -3,7 +3,7 @@
         "title": "lodestone_teleport",
         "description": ["",{"translate":"lodestone_teleport.title","fallback": "[lodestone_teleport] ","color": "gold"},{"translate":"lodestone_teleport.installed","fallback": "lodestone_teleport resourcepack missing!","color": "aqua"}],
         "icon": {
-            "item": "minecraft:painting"
+            "id": "minecraft:painting"
         },
         "show_toast": false,
         "announce_to_chat": false,

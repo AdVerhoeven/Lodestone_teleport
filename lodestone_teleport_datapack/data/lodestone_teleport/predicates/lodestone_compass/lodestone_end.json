@@ -1,8 +1,20 @@
 {
-    "condition": "entity_properties",
-    "entity": "this",
-    "predicate": 
-    {
-        "nbt": "{SelectedItem:{id: \"minecraft:compass\", tag: {LodestoneDimension: \"minecraft:the_end\"}}}"
-    }
+	"condition": "minecraft:entity_properties",
+	"entity": "this",
+	"predicate": {
+		"type": "minecraft:player",
+		"equipment": {
+			"mainhand": {
+				"items": ["minecraft:compass"],
+				"components": {
+					"minecraft:lodestone_tracker": {
+						"tracker": {
+							"dimension": "minecraft:the_end"
+						},
+						"tracked": true
+					}
+				}
+			}
+		}
+	}
 }
