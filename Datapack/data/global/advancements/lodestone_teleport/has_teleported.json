@@ -1,0 +1,27 @@
+{
+    "display": {
+        "title": ["",{"translate": "lodestone_teleport.advancement.teleport.first.title", "fallback": "Your first teleportation! F"}],
+        "description": ["",{"translate": "lodestone_teleport.advancement.teleport.first.description", "fallback": "Luckily you arived at the destination in one piece. F","color": "gold"}],
+        "icon": {
+            "item": "compass",
+            "nbt": "{LodestoneTracked:true}"
+        },
+        "show_toast": true,
+        "announce_to_chat": true,
+        "background":"minecraft:lodestone"
+    },
+    "parent": "global:lodestone_teleport/datapack",
+    "criteria": {
+        "requirement": {
+            "trigger": "minecraft:location",
+            "conditions": {
+                "items": [
+                    {
+                        "items": ["compass"],
+                        "nbt": "{tag:{LodestoneTracked:1b}}"
+                    }
+                ]
+            }
+        }
+    }
+}

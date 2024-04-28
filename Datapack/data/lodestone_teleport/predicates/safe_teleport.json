@@ -1,0 +1,27 @@
+{
+    "condition": "all_of",
+    "terms": [        
+        {
+            "condition": "location_check", 
+            "offsetX": 0,
+            "offsetY": 0,
+            "offsetZ": 0,
+            "predicate": {
+                "block": {
+                        "tag": "minecraft:teleport_allowed"
+                    }
+            }
+        },
+        {
+            "condition": "location_check", 
+            "offsetX": 0,
+            "offsetY": 1,
+            "offsetZ": 0,
+            "predicate": {
+                "block": {
+                        "tag": "minecraft:teleport_allowed"
+                    }
+            }
+        }
+    ]
+}

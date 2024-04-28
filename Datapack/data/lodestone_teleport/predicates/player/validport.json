@@ -1,0 +1,21 @@
+{
+  "condition": "all_of",
+  "terms": [
+    {
+      "condition": "minecraft:reference",
+      "name": "lodestone_teleport:player/has_lodestone_compass"
+    },
+    {
+      "condition": "minecraft:reference",
+      "name": "lodestone_teleport:player/is_sneaking"
+    },
+    {
+      "condition": "minecraft:reference",
+      "name": "lodestone_teleport:player/in_overworld"
+    },
+    {
+      "condition": "minecraft:reference",
+      "name": "lodestone_teleport:player/on_ground"
+    }
+  ]
+}

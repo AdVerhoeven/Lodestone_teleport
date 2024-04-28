@@ -1,0 +1,3 @@
+tellraw @s [{"translate":"lodestone_teleport.title","fallback":"[lodestone_teleport] ","color":"gold"},{"translate":"lodestone_teleport.notify.teleport","fallback":"Teleport ","color": "white"},{"text": " "},{"translate":"lodestone_teleport.notify.ready","fallback":"ready","color":"green"},{"text":"!"}]
+execute at @s run playsound minecraft:entity.arrow.hit_player master @s ~ ~ ~ 1 1
+scoreboard players set @s lodestone_teleport_notify 0

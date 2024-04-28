@@ -1,0 +1,88 @@
+[
+    {
+        "function": "set_lore",
+        "entity": "this",
+        "lore": [
+            {
+                "text": "XYZ: ",
+                "color": "white",
+                "italic": false,
+                "extra": [
+                    {
+                        "nbt": "SelectedItem.tag.LodestonePos.X",
+                        "entity": "@s"
+                    },
+                    {
+                        "text": " / "
+                    },
+                    {
+                        "nbt": "SelectedItem.tag.LodestonePos.Y",
+                        "entity": "@s"
+                    },
+                    {
+                        "text": " / "
+                    },
+                    {
+                        "nbt": "SelectedItem.tag.LodestonePos.Z",
+                        "entity": "@s"
+                    }
+                ]
+            }
+        ],
+        "replace": true
+    },
+    {
+        "function": "set_lore",
+        "entity": "this",
+        "conditions": [
+            {
+                "condition": "reference",
+                "name": "lodestone_teleport:lodestone_compass/lodestone_overworld"
+            }
+        ],
+        "lore": [
+            {
+                "text": "In the Overworld",
+                "color": "green",
+                "italic": false
+            }
+        ],
+        "replace": false
+    },
+    {
+        "function": "set_lore",
+        "entity": "this",
+        "conditions": [
+            {
+                "condition": "reference",
+                "name": "lodestone_teleport:lodestone_compass/lodestone_nether"
+            }
+        ],
+        "lore": [
+            {
+                "text": "In the Nether",
+                "color": "red",
+                "italic": false
+            }
+        ],
+        "replace": false
+    },
+    {
+        "function": "set_lore",
+        "entity": "this",
+        "conditions": [
+            {
+                "condition": "reference",
+                "name": "lodestone_teleport:lodestone_compass/lodestone_end"
+            }
+        ],
+        "lore": [
+            {
+                "text": "In the End",
+                "color": "yellow",
+                "italic": false
+            }
+        ],
+        "replace": false
+    }    
+]

@@ -1,0 +1,17 @@
+[
+    {
+        "function": "set_enchantments",
+        "enchantments": {
+            "unbreaking": 99
+        }
+    },
+    {
+        "function": "set_lore",
+        "lore": [{"text": "The real deal"}],
+        "replace": true
+    },
+    {
+        "function": "set_nbt",
+        "tag":"{HideFlags:1}"
+    }
+]

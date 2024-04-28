@@ -1,0 +1,13 @@
+{
+	"pack": {
+		"pack_format": 15,
+		"description": "Resources for lodestone_teleport datapack"
+	},
+	"language": {
+		"en_us": {
+			"name": "English",
+			"region": "US",
+			"bidirectional": false
+		}
+	}
+}

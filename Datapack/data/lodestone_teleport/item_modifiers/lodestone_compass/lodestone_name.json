@@ -1,0 +1,113 @@
+[
+    {
+        "function": "set_name",
+        "entity": "this",
+        "conditions": [
+            {
+                "condition": "reference",
+                "name": "lodestone_teleport:lodestone_compass/lodestone_overworld"
+            }
+        ],
+        "name": [
+            {
+                "text": "The Overworld: ",
+                "color": "green",
+                "italic": false,
+                "extra": [
+                    {
+                        "nbt": "SelectedItem.tag.LodestonePos.X",
+                        "entity": "@s"
+                    },
+                    {
+                        "text": "/"
+                    },
+                    {
+                        "nbt": "SelectedItem.tag.LodestonePos.Y",
+                        "entity": "@s"
+                    },
+                    {
+                        "text": "/"
+                    },
+                    {
+                        "nbt": "SelectedItem.tag.LodestonePos.Z",
+                        "entity": "@s"
+                    }
+                ]
+            }
+        ]
+    },
+    {
+        "function": "set_name",
+        "entity": "this",
+        "conditions": [
+            {
+                "condition": "reference",
+                "name": "lodestone_teleport:lodestone_compass/lodestone_nether"
+            }
+        ],
+        "name": [
+            {
+                "text": "The Nether: ",
+                "color": "red",
+                "italic": false,
+                "extra": [
+                    {
+                        "nbt": "SelectedItem.tag.LodestonePos.X",
+                        "entity": "@s"
+                    },
+                    {
+                        "text": "/"
+                    },
+                    {
+                        "nbt": "SelectedItem.tag.LodestonePos.Y",
+                        "entity": "@s"
+                    },
+                    {
+                        "text": "/"
+                    },
+                    {
+                        "nbt": "SelectedItem.tag.LodestonePos.Z",
+                        "entity": "@s"
+                    }
+                ]
+            }
+        ]
+    },
+    {
+        "function": "set_name",
+        "entity": "this",
+        "conditions": [
+            {
+                "condition": "reference",
+                "name": "lodestone_teleport:lodestone_compass/lodestone_end"
+            }
+        ],
+        "name": [
+            {
+                "text": "The End: ",
+                "color": "yellow",
+                "italic": false,
+                "extra": [
+                    {
+                        "nbt": "SelectedItem.tag.LodestonePos.X",
+                        "entity": "@s"
+                    },
+                    {
+                        "text": "/"
+                    },
+                    {
+                        "nbt": "SelectedItem.tag.LodestonePos.Y",
+                        "entity": "@s"
+                    },
+                    {
+                        "text": "/"
+                    },
+                    {
+                        "nbt": "SelectedItem.tag.LodestonePos.Z",
+                        "entity": "@s"
+                    }
+                ]
+            }
+        ]
+    }
+]

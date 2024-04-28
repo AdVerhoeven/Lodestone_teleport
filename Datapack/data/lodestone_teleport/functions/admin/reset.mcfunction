@@ -1,0 +1,2 @@
+function lodestone_teleport:admin/uninstall
+reload
