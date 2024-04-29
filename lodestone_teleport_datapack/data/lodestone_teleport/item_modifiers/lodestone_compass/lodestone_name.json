@@ -2,6 +2,7 @@
     {
         "function": "set_name",
         "entity": "this",
+        "target": "item_name",
         "conditions": [
             {
                 "condition": "reference",
@@ -39,6 +40,7 @@
     {
         "function": "set_name",
         "entity": "this",
+        "target": "item_name",
         "conditions": [
             {
                 "condition": "reference",
@@ -76,6 +78,7 @@
     {
         "function": "set_name",
         "entity": "this",
+        "target": "item_name",
         "conditions": [
             {
                 "condition": "reference",

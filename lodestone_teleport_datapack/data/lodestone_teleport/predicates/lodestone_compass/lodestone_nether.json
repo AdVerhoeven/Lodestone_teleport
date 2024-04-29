@@ -6,14 +6,7 @@
 		"equipment": {
 			"mainhand": {
 				"items": ["minecraft:compass"],
-				"components": {
-					"minecraft:lodestone_tracker": {
-						"tracker": {
-							"dimension": "minecraft:the_nether"
-						},
-						"tracked": true
-					}
-				}
+				"nbt": "SelectedItem.components.minecraft:lodestone_tracker.dimension.minecraft:the_nether"
 			}
 		}
 	}
