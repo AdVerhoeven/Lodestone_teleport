@@ -1,27 +1,54 @@
 {
     "display": {
-        "title": ["",{"translate": "lodestone_teleport.advancement.teleport.first.title", "fallback": "Your first teleportation! F"}],
-        "description": ["",{"translate": "lodestone_teleport.advancement.teleport.first.description", "fallback": "Luckily you arived at the destination in one piece. F","color": "gold"}],
+        "title": [
+            "",
+            {
+                "translate": "lodestone_teleport.advancement.teleport.first.title",
+                "fallback": "Your first teleportation! F"
+            }
+        ],
+        "description": [
+            "",
+            {
+                "translate": "lodestone_teleport.advancement.teleport.first.description",
+                "fallback": "Luckily you arived at the destination in one piece. F",
+                "color": "gold"
+            }
+        ],
         "icon": {
+            "item": "minecraft:compass",
             "id": "minecraft:compass",
             "components": "minecraft:lodestone_tracker"
         },
         "show_toast": true,
         "announce_to_chat": true,
-        "background":"minecraft:lodestone"
+        "background": "minecraft:lodestone"
     },
     "parent": "global:lodestone_teleport/datapack",
     "criteria": {
-        "requirement": {
-            "trigger": "minecraft:location",
-            "conditions": {
-                "items": [
-                    {
-                        "items": ["compass"],
-						"components": "minecraft:lodestone_tracker"
-                    }
-                ]
-            }
-        }
-    }
+		"requirement": {
+			"trigger": "minecraft:location",
+			"conditions": {
+				"player": [
+					{
+						"condition": "minecraft:entity_properties",
+						"entity": "this",
+						"predicate": {
+							"type": "minecraft:player",
+							"equipment": {
+								"mainhand": {
+									"items": "minecraft:compass",
+									"components": {
+										"minecraft:lodestone_tracker": {
+											"tracked": true
+										}
+									}
+								}
+							}
+						}
+					}
+				]
+			}
+		}
+	}
 }

@@ -29,7 +29,7 @@
                 ]
             }
         ],
-        "replace": true
+        "mode": "replace_all"
     },
     {
         "function": "set_lore",
@@ -47,7 +47,7 @@
                 "italic": false
             }
         ],
-        "replace": false
+        "mode": "append"
     },
     {
         "function": "set_lore",
@@ -65,7 +65,7 @@
                 "italic": false
             }
         ],
-        "replace": false
+        "mode": "append"
     },
     {
         "function": "set_lore",
@@ -83,6 +83,6 @@
                 "italic": false
             }
         ],
-        "replace": false
+        "mode": "append"
     }    
 ]
