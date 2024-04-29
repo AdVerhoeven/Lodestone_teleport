@@ -11,10 +11,6 @@
     },
     {
       "condition": "minecraft:reference",
-      "name": "lodestone_teleport:player/in_overworld"
-    },
-    {
-      "condition": "minecraft:reference",
       "name": "lodestone_teleport:player/on_ground"
     }
   ]

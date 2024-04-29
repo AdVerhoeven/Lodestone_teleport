@@ -1,17 +1,18 @@
 {
-    "condition": "minecraft:entity_properties",
-    "entity": "this",
-    "predicate": {
-      "type": "minecraft:player",
-      "equipment": {
-        "mainhand": {
-          "item": "minecraft:compass",
-          "components": {
-            "minecraft:lodestone_tracker": {
-              "tracked": true
-            }
-          }
-        }
-      }
-    }
+	"condition": "minecraft:entity_properties",
+	"entity": "this",
+	"predicate": {
+		"type": "minecraft:player",
+		"equipment": {
+			"mainhand": {
+				"items": "minecraft:compass",
+				"count": 1,
+				"components": {
+					"minecraft:lodestone_tracker": {
+						"tracked": true
+					}
+				}
+			}
+		}
+	}
 }
