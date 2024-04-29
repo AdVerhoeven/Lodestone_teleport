@@ -15,21 +15,21 @@
                 "italic": false,
                 "extra": [
                     {
-                        "nbt": "SelectedItem.components",
+                        "nbt": "SelectedItem.components.minecraft:lodestone_tracker.target.pos[0]",
                         "entity": "@s"
                     },
                     {
                         "text": "/"
                     },
                     {
-                        "nbt": "SelectedItem.components",
+                        "nbt": "SelectedItem.components.minecraft:lodestone_tracker.target.pos[1]",
                         "entity": "@s"
                     },
                     {
                         "text": "/"
                     },
                     {
-                        "nbt": "SelectedItem.components",
+                        "nbt": "SelectedItem.components.minecraft:lodestone_tracker.target.pos[2]",
                         "entity": "@s"
                     }
                 ]
@@ -52,21 +52,21 @@
                 "italic": false,
                 "extra": [
                     {
-                        "nbt": "SelectedItem.components",
+                        "nbt": "SelectedItem.components.minecraft:lodestone_tracker.target.pos[0]",
                         "entity": "@s"
                     },
                     {
                         "text": "/"
                     },
                     {
-                        "nbt": "SelectedItem.components",
+                        "nbt": "SelectedItem.components.minecraft:lodestone_tracker.target.pos[1]",
                         "entity": "@s"
                     },
                     {
                         "text": "/"
                     },
                     {
-                        "nbt": "SelectedItem.components",
+                        "nbt": "SelectedItem.components.minecraft:lodestone_tracker.target.pos[2]",
                         "entity": "@s"
                     }
                 ]
