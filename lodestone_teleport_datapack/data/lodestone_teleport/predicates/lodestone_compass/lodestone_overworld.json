@@ -6,7 +6,13 @@
 		"equipment": {
 			"mainhand": {
 				"items": ["minecraft:compass"],
-				"nbt": "SelectedItem.components.minecraft:lodestone_tracker.target.dimension.minecraft:overworld"
+				"components":{
+					"minecraft:lodestone_tracker": {
+						"target":{
+							"dimension": "minecraft:overworld"
+						}
+					}
+				}
 			}
 		}
 	}

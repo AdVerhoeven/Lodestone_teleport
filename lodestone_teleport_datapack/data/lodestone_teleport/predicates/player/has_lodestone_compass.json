@@ -2,16 +2,17 @@
 	"condition": "minecraft:entity_properties",
 	"entity": "this",
 	"predicate": {
-		"type": "minecraft:player",
+		"flags": {
+			"is_sneaking": true
+		},
 		"equipment": {
 			"mainhand": {
 				"items": "minecraft:compass",
-				"count": 1,
-				"components": {
-					"minecraft:lodestone_tracker": {
-						"tracked": true
-					}
-				}
+				"count": {
+					"min": 1,
+					"max": 64
+				},
+				"nbt":"minecraft:lodestone_tracker"
 			}
 		}
 	}
