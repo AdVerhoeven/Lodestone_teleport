@@ -3,6 +3,6 @@
 	"entity": "this",
 	"predicate": {
 		"type": "minecraft:player",
-		"{SelectedItem:{components:{\"minecraft:lodestone_tracker\":{target:{dimension:\"minecraft:the_nether\"}}}}}"
+		"nbt": "{SelectedItem:{components:{\"minecraft:lodestone_tracker\":{target:{dimension:\"minecraft:the_nether\"}}}}}"
 	}
 }
