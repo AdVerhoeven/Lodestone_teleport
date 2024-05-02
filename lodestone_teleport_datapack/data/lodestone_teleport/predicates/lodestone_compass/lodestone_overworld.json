@@ -3,17 +3,6 @@
 	"entity": "this",
 	"predicate": {
 		"type": "minecraft:player",
-		"equipment": {
-			"mainhand": {
-				"items": ["minecraft:compass"],
-				"components":{
-					"minecraft:lodestone_tracker": {
-						"target":{
-							"dimension": "minecraft:overworld"
-						}
-					}
-				}
-			}
-		}
+		"{SelectedItem:{components:{\"minecraft:lodestone_tracker\":{target:{dimension:\"minecraft:overworld\"}}}}}"
 	}
 }
