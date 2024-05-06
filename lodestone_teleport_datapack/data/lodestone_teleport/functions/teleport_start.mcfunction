@@ -13,3 +13,5 @@ execute as @e[type=area_effect_cloud,tag=TeleportHelper,limit=1] run function lo
 
 tag @s remove TeleportHelper
 scoreboard players set @s lodestone_teleport_notify 1
+
+advancement grant @s only global:lodestone_teleport/has_teleported
