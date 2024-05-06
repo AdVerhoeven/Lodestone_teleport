@@ -30,7 +30,6 @@ execute if entity @s[predicate=lodestone_teleport:safe_teleport] run tp @a[tag=T
 
 #update cooldown
 execute store result score @a[tag=TeleportHelper,limit=1] lodestone_teleport_cooldown run scoreboard players get #lodestone_teleport lodestone_teleport_c_cooldown
-return 1
 
 execute run forceload remove ~ ~
 

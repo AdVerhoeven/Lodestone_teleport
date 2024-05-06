@@ -8,3 +8,5 @@ execute store result score @s lodestone_teleport_Y run data get entity @s Select
 # add one to teleport ontop the lodestone
 scoreboard players add @s lodestone_teleport_Y 1
 execute store result score @s lodestone_teleport_Z run data get entity @s SelectedItem.components.minecraft:lodestone_tracker.target.pos[2]
+
+scoreboard players set @s lodestone_teleport_ok 1

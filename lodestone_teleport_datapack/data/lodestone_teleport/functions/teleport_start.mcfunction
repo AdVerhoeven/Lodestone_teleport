@@ -1,9 +1,7 @@
-
-
 #Start by summoning a dummy entity in the right dimension
-execute if predicate lodestone_teleport:lodestone_compass/lodestone_nether as @s in minecraft:the_nether run summon minecraft:area_effect_cloud 0 0 0 {Tags:[TeleportHelper],Invulnerable:true,NoGravity:true,Duration:10000}
-execute if predicate lodestone_teleport:lodestone_compass/lodestone_end as @s in minecraft:the_end run summon minecraft:area_effect_cloud 0 0 0 {Tags:[TeleportHelper],Invulnerable:true,NoGravity:true,Duration:10000}
-execute if predicate lodestone_teleport:lodestone_compass/lodestone_overworld as @s in minecraft:overworld run summon minecraft:area_effect_cloud 0 0 0 {Tags:[TeleportHelper],Invulnerable:true,NoGravity:true,Duration:10000}
+execute if predicate lodestone_teleport:lodestone_compass/lodestone_nether as @s in minecraft:the_nether run summon minecraft:area_effect_cloud 0 0 0 {Tags:[TeleportHelper],Invulnerable:true,NoGravity:true}
+execute if predicate lodestone_teleport:lodestone_compass/lodestone_end as @s in minecraft:the_end run summon minecraft:area_effect_cloud 0 0 0 {Tags:[TeleportHelper],Invulnerable:true,NoGravity:true}
+execute if predicate lodestone_teleport:lodestone_compass/lodestone_overworld as @s in minecraft:overworld run summon minecraft:area_effect_cloud 0 0 0 {Tags:[TeleportHelper],Invulnerable:true,NoGravity:true}
 
 execute as @s run item modify entity @s weapon.mainhand lodestone_teleport:lodestone_compass/lodestone_lore
 execute as @s run item modify entity @s weapon.mainhand lodestone_teleport:lodestone_compass/lodestone_name
