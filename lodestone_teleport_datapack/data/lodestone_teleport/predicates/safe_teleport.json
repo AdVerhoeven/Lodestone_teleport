@@ -8,7 +8,7 @@
             "offsetZ": 0,
             "predicate": {
                 "block": {
-                        "tag": "minecraft:teleport_allowed"
+                        "blocks": "#minecraft:teleport_allowed"
                     }
             }
         },
@@ -19,7 +19,29 @@
             "offsetZ": 0,
             "predicate": {
                 "block": {
-                        "tag": "minecraft:teleport_allowed"
+                        "blocks": "#minecraft:teleport_allowed"
+                    }
+            }
+        },
+        {
+            "condition": "location_check", 
+            "offsetX": 0,
+            "offsetY": 2,
+            "offsetZ": 0,
+            "predicate": {
+                "block": {
+                        "blocks": "#minecraft:teleport_allowed"
+                    }
+            }
+        },
+        {
+            "condition": "location_check", 
+            "offsetX": 0,
+            "offsetY": 3,
+            "offsetZ": 0,
+            "predicate": {
+                "block": {
+                        "blocks": "#minecraft:teleport_allowed"
                     }
             }
         }
