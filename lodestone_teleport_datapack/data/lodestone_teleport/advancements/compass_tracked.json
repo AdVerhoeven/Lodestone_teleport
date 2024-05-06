@@ -1,0 +1,45 @@
+{
+    "display": {
+		"icon": {
+			"id": "minecraft:stone"
+		},
+		"title": "compass used",
+		"description": "test",
+        "announce_to_chat": false,
+        "hidden": true
+	},
+    "parent": "global:lodestone_teleport/datapack",
+	"criteria": {
+		"use_lodestone": {
+			"trigger": "minecraft:item_used_on_block",
+			"conditions": {
+				"location": [
+					{
+						"condition": "minecraft:location_check",
+						"predicate": {
+							"block": {
+								"blocks": "minecraft:lodestone"
+							}
+						}
+					},
+					{
+						"condition": "minecraft:match_tool",
+						"predicate": {
+							"items": "minecraft:compass",
+                            "count": 1
+						}
+					}
+				]
+			}
+		}
+	},
+	"requirements": [
+		[
+			"use_lodestone"
+		]
+	],
+    "rewards": {
+		"function": "lodestone_teleport:modify_compass_data"
+	},
+	"sends_telemetry_event": false
+}
