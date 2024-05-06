@@ -16,12 +16,10 @@
             }
         ],
         "icon": {
-            "item": "minecraft:compass",
-            "id": "minecraft:compass"
+            "id": "minecraft:recovery_compass"
         },
         "show_toast": true,
-        "announce_to_chat": true,
-        "background": "minecraft:lodestone"
+        "announce_to_chat": true
     },
     "parent": "global:lodestone_teleport/datapack",
     "criteria": {

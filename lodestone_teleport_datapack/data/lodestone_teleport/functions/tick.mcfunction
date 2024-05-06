@@ -16,5 +16,5 @@ execute as @a if score @s lodestone_teleport_cooldown <= #lodestone_teleport lod
 # Store coordinates for teleporting players
 execute as @a[scores={lodestone_teleport_cooldown=..0}] run function lodestone_teleport:teleport_store_coordinates
 
-# spawn the gateway portal
+# Start teleportation, unless teleport_store_coordinates failed
 execute as @a[scores={lodestone_teleport_cooldown=..0,lodestone_teleport_ok=1..}] at @s run function lodestone_teleport:teleport_start

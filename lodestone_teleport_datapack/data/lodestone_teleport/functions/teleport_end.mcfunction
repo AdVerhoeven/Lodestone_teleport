@@ -8,7 +8,7 @@ execute at @s run tp @s ~0.5 ~0.1 ~0.5
 
 execute if score #lodestone_teleport lodestone_teleport_c_notify_chunkload matches 1.. run tellraw @a[tag=TeleportHelper] [{"text": "[lodestone_teleport] ","color": "gold"},{"text": "Force loading target chunk!","color": "red"}]
  
-
+#Forceload the target chunk
 execute if entity @s in the_nether run execute at @s in the_nether run forceload add ~ ~
 execute if entity @s in the_end run execute at @s in the_end run forceload add ~ ~
 execute if entity @s in overworld run execute at @s in overworld run forceload add ~ ~
@@ -31,6 +31,7 @@ execute if entity @s[predicate=lodestone_teleport:safe_teleport] run tp @a[tag=T
 #update cooldown
 execute store result score @a[tag=TeleportHelper,limit=1] lodestone_teleport_cooldown run scoreboard players get #lodestone_teleport lodestone_teleport_c_cooldown
 
+#Remove the forceload to reduce memory consumption.
 execute run forceload remove ~ ~
 
 #destroy dummy effect

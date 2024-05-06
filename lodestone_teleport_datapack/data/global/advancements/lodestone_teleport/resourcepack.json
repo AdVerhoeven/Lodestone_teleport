@@ -15,7 +15,6 @@
             }
         ],
         "icon": {
-            "item": "minecraft:painting",
             "id": "minecraft:painting"
         },
         "show_toast": false,

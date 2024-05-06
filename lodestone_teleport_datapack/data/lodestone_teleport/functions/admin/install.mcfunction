@@ -24,4 +24,4 @@ scoreboard players set @a lodestone_teleport_Y 0
 scoreboard players set @a lodestone_teleport_Z 0
 
 # --- finish install ---
-data modify storage minecraft:lodestone_teleport is_installed set value 1b
+data modify storage lodestone_teleport:internal is_installed set value 1b

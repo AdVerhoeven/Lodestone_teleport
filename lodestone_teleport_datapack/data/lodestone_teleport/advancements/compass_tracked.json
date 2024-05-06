@@ -3,9 +3,8 @@
 		"icon": {
 			"id": "minecraft:stone"
 		},
-		"title": "compass used",
-		"description": "test",
         "announce_to_chat": false,
+		"show_toast": false,
         "hidden": true
 	},
     "parent": "global:lodestone_teleport/datapack",

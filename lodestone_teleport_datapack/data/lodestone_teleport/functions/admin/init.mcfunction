@@ -1,6 +1,6 @@
 # --- install ---
-execute unless data storage lodestone_teleport is_installed run function lodestone_teleport:admin/install
-execute if data storage lodestone_teleport is_installed run tellraw @a [{"translate":"lodestone_teleport.title","fallback": "[lodestone_teleport] ","color": "gold"},{"translate":"lodestone_teleport.installed","fallback": "Datapack installed!\nMissing resourcepack!","color": "white"}]
+execute unless data storage lodestone_teleport:internal is_installed run function lodestone_teleport:admin/install
+execute if data storage lodestone_teleport:internal is_installed run tellraw @a [{"translate":"lodestone_teleport.title","fallback": "[lodestone_teleport] ","color": "gold"},{"translate":"lodestone_teleport.installed","fallback": "Datapack installed!\nMissing resourcepack!","color": "white"}]
 
 # --- forceload ---
 # In order for the teleports to work the chunk at 0 0 in each dimension should be loaded
