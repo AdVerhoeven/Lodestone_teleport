@@ -1,6 +1,6 @@
 {
     "display": {
-        "title": "lodestone_teleport",
+        "title": "Lodestone teleport Resourcepack",
         "description": [
             "",
             {
@@ -10,7 +10,7 @@
             },
             {
                 "translate": "lodestone_teleport.installed",
-                "fallback": "lodestone_teleport resourcepack missing!",
+                "fallback": "Resourcepack missing!",
                 "color": "aqua"
             }
         ],
