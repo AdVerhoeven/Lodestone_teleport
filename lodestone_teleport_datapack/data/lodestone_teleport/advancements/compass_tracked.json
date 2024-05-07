@@ -1,15 +1,6 @@
 {
-    "display": {
-		"icon": {
-			"id": "minecraft:stone"
-		},
-        "announce_to_chat": false,
-		"show_toast": false,
-        "hidden": true
-	},
-    "parent": "global:lodestone_teleport/datapack",
 	"criteria": {
-		"use_lodestone": {
+		"lodestone_teleport_use_lodestone": {
 			"trigger": "minecraft:item_used_on_block",
 			"conditions": {
 				"location": [
@@ -25,7 +16,7 @@
 						"condition": "minecraft:match_tool",
 						"predicate": {
 							"items": "minecraft:compass",
-                            "count": 1
+							"count": 1
 						}
 					}
 				]
@@ -34,10 +25,10 @@
 	},
 	"requirements": [
 		[
-			"use_lodestone"
+			"lodestone_teleport_use_lodestone"
 		]
 	],
-    "rewards": {
+	"rewards": {
 		"function": "lodestone_teleport:modify_compass_data"
 	},
 	"sends_telemetry_event": false
