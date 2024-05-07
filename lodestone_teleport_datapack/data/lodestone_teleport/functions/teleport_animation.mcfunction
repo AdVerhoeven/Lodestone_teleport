@@ -99,4 +99,3 @@ particle totem_of_undying ~0.343 ~1.000 ~0.939 0 0 0 0 0
 particle totem_of_undying ~0.523 ~1.000 ~0.852 0 0 0 0 0
 particle totem_of_undying ~0.682 ~1.000 ~0.731 0 0 0 0 0
 particle totem_of_undying ~0.814 ~1.000 ~0.581 0 0 0 0 0
-playsound block.beacon.activate ambient @p ~ ~ ~ 1 1 1

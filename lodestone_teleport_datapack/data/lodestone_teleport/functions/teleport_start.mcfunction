@@ -7,7 +7,8 @@ execute as @s run item modify entity @s weapon.mainhand lodestone_teleport:lodes
 execute as @s run item modify entity @s weapon.mainhand lodestone_teleport:lodestone_compass/lodestone_name
 
 execute as @s run tag @s add TeleportHelper
-execute at @s run function lodestone_teleport:teleport_animation
+execute if score #lodestone_teleport lodestone_teleport_c_animation matches 1 as @s run function lodestone_teleport:teleport_animation
+playsound block.beacon.activate ambient @p ~ ~ ~ 1 1 1
 
 execute as @e[type=area_effect_cloud,tag=TeleportHelper,limit=1] run function lodestone_teleport:teleport_end
 
