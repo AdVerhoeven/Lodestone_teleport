@@ -1,5 +1,5 @@
 {
-	"lodestone_teleport.installed":"Installed with resourcepack",
+	"lodestone_teleport.installed":"Resource pack enabled!",
 	"lodestone_teleport.title":"[lodestone_teleport] ",
 	"lodestone_teleport.configure.menuname":"Help menu",
 	"lodestone_teleport.configure.action.click":"Click",
@@ -7,7 +7,8 @@
 	"lodestone_teleport.configure.tickhint":"(1 second = 20 ticks)",
 	"lodestone_teleport.configure.cooldown":"- Change cooldown after teleport",
 	"lodestone_teleport.configure.charge":"- Change charge time",
-	"lodestone_teleport.configure.notify.chunkload":"- Notify chunkloading (no < 1 <= yes)",
+	"lodestone_teleport.configure.notify.chunkload":"- Notify chunkloading (1 = yes)",
+	"lodestone_teleport.configure.animation":"- Enable teleport animation (1 = yes)",
 	"lodestone_teleport.location_check":"Checking location",
 	"lodestone_teleport.location_unsafe":"Location is unsafe!",
 	"lodestone_teleport.chunkload":"Loading chunks!",

@@ -13,7 +13,7 @@ execute if entity @s in the_nether run execute at @s in the_nether run forceload
 execute if entity @s in the_end run execute at @s in the_end run forceload add ~ ~
 execute if entity @s in overworld run execute at @s in overworld run forceload add ~ ~
 
-execute if score #lodestone_teleport lodestone_teleport_c_notify_chunkload matches 1.. run tellraw @a[tag=TeleportHelper] [{"text": "[lodestone_teleport] ","color": "gold"},{"text": "Chunk loading complete!","color": "green"}]
+execute if score #lodestone_teleport lodestone_teleport_c_notify_chunkload matches 1 run tellraw @a[tag=TeleportHelper] [{"text": "[lodestone_teleport] ","color": "gold"},{"text": "Chunk loading complete!","color": "green"}]
 execute run tellraw @a[tag=TeleportHelper] [{"translate": "lodestone_teleport.title","fallback": "[lodestone_teleport] ", "color": "gold"},{"translate":"lodestone_teleport.location_check","fallback": "Checking location","color": "yellow"}]
 
 #check location and notify if it is blocked. 
