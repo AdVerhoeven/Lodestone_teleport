@@ -23,7 +23,7 @@ execute unless entity @s[predicate=lodestone_teleport:safe_teleport] run tellraw
 execute unless entity @s[predicate=lodestone_teleport:safe_teleport] run playsound entity.allay.hurt player @a[tag=TeleportHelper] ~ ~ ~ 1 1 1
 
 #Set rotation of dummy entity to the player rotation (player will not change its rotation)
-execute at @s rotated as @a[tag=TeleportHelper] run tp ~ ~ ~
+execute at @s rotated as @a[tag=TeleportHelper,scores={lodestone_teleport_ok=1}] run tp ~ ~ ~
 
 #teleport the player to exact location/facing
 execute if entity @s[predicate=lodestone_teleport:safe_teleport] run tp @a[tag=TeleportHelper,limit=1] @s

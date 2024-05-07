@@ -1,3 +1,5 @@
+scoreboard players set @s lodestone_teleport_ok 0
+
 #Start by summoning a dummy entity in the right dimension
 execute if predicate lodestone_teleport:lodestone_compass/lodestone_nether as @s in minecraft:the_nether run summon minecraft:area_effect_cloud 0 0 0 {Tags:[TeleportHelper],Invulnerable:true,NoGravity:true}
 execute if predicate lodestone_teleport:lodestone_compass/lodestone_end as @s in minecraft:the_end run summon minecraft:area_effect_cloud 0 0 0 {Tags:[TeleportHelper],Invulnerable:true,NoGravity:true}

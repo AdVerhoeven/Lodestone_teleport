@@ -14,7 +14,7 @@ execute as @a if score @s lodestone_teleport_cooldown > #lodestone_teleport lode
 execute as @a if score @s lodestone_teleport_cooldown <= #lodestone_teleport lodestone_teleport_c_charge if predicate lodestone_teleport:player/validport run scoreboard players remove @s lodestone_teleport_cooldown 1
 
 # Store coordinates for teleporting players
-execute as @a[scores={lodestone_teleport_cooldown=..0}] run function lodestone_teleport:teleport_store_coordinates
+execute as @a[scores={lodestone_teleport_cooldown=..0},predicate=lodestone_teleport:player/validport] run function lodestone_teleport:teleport_store_coordinates
 
 # Start teleportation, unless teleport_store_coordinates failed
-execute as @a[scores={lodestone_teleport_cooldown=..0,lodestone_teleport_ok=1..}] at @s run function lodestone_teleport:teleport_start
+execute as @a[scores={lodestone_teleport_cooldown=..0,lodestone_teleport_ok=1}] at @s run function lodestone_teleport:teleport_start
