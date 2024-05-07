@@ -25,11 +25,12 @@ This datapack has been updated to work with packversion 41 for minecraft java ed
 
 - The player must be touching the ground.
 - The player must be sneaking.
-- The player must be holding a compass.
-- The compass must be tracking a lodestone.
-- The lodestone must have at least 2 non-solid blocks above it.
+- The player must be holding a compass in their mainhand.
+- The compass must be tracking a lodestone in one of the 3 vanilla dimensions.
 - The teleportation has a cooldown (see: Configuration)
 - The teleportation has a charge time (see: Configuration)
+- The lodestone must have at least 2 non-solid blocks above it.
+- The player will teleport 0.1 blocks above the center of the lodestone with their original orientation.
 
 ## Installation
 
@@ -45,9 +46,15 @@ Configurable settings:
 - Notify chunkload, disables the chunkloading messages
 
 Other admin/configuration functions:
-- lodestone_teleport:admin/install, does not have to be called manually as it should be called upon (re-)loading your world.
+- **lodestone_teleport:admin/install**, does not have to be called manually as it should be called upon (re-)loading your world.
 
-- lodestone_teleport:admin/uninstall, should remove most scoreboard entries and achievements, will only do a soft reset if the datapack has an unexpected name or location. It would be best to double check the exact name and location yourself by calling /datapack list and copying the name for this datapack into the uninstall function.
+- **lodestone_teleport:admin/uninstall**, should remove most scoreboard entries and achievements, will only do a soft reset if the datapack has an unexpected name or location. It would be best to double check the exact name and location yourself by calling /datapack list and copying the name for this datapack into the uninstall function.
+
+## Wishes
+
+This datapack was not tested for multiplayer, it will probably result in unreliable outcomes when multiple players teleport at the same time.
+
+A remedy for this would involve storing the UUID of the player and/or the target entity to ensure the right player teleports to the right target.
 
 
 
