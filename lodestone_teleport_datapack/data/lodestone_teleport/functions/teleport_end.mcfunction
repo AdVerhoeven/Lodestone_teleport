@@ -22,6 +22,7 @@ execute run tellraw @a[tag=TeleportHelper] [{"translate": "lodestone_teleport.ti
 execute unless entity @s[predicate=lodestone_teleport:safe_teleport] run tellraw @a[tag=TeleportHelper] [{"translate": "lodestone_teleport.title","fallback": "[lodestone_teleport] ", "color": "gold"},{"translate":"lodestone_teleport.location_unsafe","fallback": "Location is unsafe!","color": "red"}]
 execute unless entity @s[predicate=lodestone_teleport:safe_teleport] run playsound entity.allay.hurt player @a[tag=TeleportHelper] ~ ~ ~ 1 1 1
 
+
 #Set rotation of dummy entity to the player rotation (player will not change its rotation)
 execute at @s rotated as @a[tag=TeleportHelper,scores={lodestone_teleport_ok=1}] run tp ~ ~ ~
 
@@ -31,8 +32,12 @@ execute if entity @s[predicate=lodestone_teleport:safe_teleport] run tp @a[tag=T
 #update cooldown
 execute store result score @a[tag=TeleportHelper,limit=1] lodestone_teleport_cooldown run scoreboard players get #lodestone_teleport lodestone_teleport_c_cooldown
 
+
 #Remove the forceload to reduce memory consumption.
 execute run forceload remove ~ ~
 
-#destroy dummy effect
+#if teleport was unsafe abort by killing the marker
+execute unless entity @s[predicate=lodestone_teleport:safe_teleport] run return run kill @s
+#if teleport was safe, tell the player the teleport succeededd
+tellraw @p ["",{"translate":"lodestone_teleport.title","fallback": "[lodestone_teleport]","color": "gold"},{"translate":"lodestone_teleport.teleport.success","fallback": "Teleport complete","color": "green"}]
 kill @s

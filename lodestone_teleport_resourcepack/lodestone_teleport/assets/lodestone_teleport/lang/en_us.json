@@ -11,6 +11,7 @@
 	"lodestone_teleport.configure.animation":"- Enable teleport animation (1 = yes)",
 	"lodestone_teleport.location_check":"Checking location",
 	"lodestone_teleport.location_unsafe":"Location is unsafe!",
+	"lodestone_teleport.success":"Teleport complete",
 	"lodestone_teleport.chunkload":"Loading chunks!",
 	"lodestone_teleport.chunkunload":"Unloading chunks!",
 	"lodestone_teleport.notify.teleport": "teleport",
@@ -18,5 +19,6 @@
 	"lodestone_teleport.madeby":"Made by ",
 	"lodestone_teleport.author":"Ad Verhoeven",
 	"lodestone_teleport.advancement.teleport.first.title": "Your first teleportation!",
-	"lodestone_teleport.advancement.teleport.first.description": "Luckily you arived at the destination in one piece."
+	"lodestone_teleport.advancement.teleport.first.description": "Luckily you arived at the destination in one piece.",
+	"lodestone_teleport.compass.rename": "Your compass is magically renamed!"
 }
