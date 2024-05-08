@@ -2,11 +2,11 @@
 scoreboard objectives remove lodestone_teleport_c_cooldown
 scoreboard objectives remove lodestone_teleport_c_charge
 scoreboard objectives remove lodestone_teleport_c_notify_chunkload
+scoreboard objectives remove lodestone_teleport_c_animation
 
 # remove scoreboard objectives
 scoreboard objectives remove lodestone_teleport_cooldown
 scoreboard objectives remove lodestone_teleport_ok
-scoreboard objectives remove lodestone_teleport_after
 scoreboard objectives remove lodestone_teleport_notify
 scoreboard objectives remove lodestone_teleport_X
 scoreboard objectives remove lodestone_teleport_Y
