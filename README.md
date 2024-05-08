@@ -25,12 +25,16 @@ This datapack has been updated to work with packversion 41 for minecraft java ed
 
 - The player must be touching the ground.
 - The player must be sneaking.
-- The player must be holding a compass in their mainhand.
+- The player must be holding a compass in their mainhand. (weapon.mainhand slot)
 - The compass must be tracking a lodestone in one of the 3 vanilla dimensions.
 - The teleportation has a cooldown (see: Configuration)
 - The teleportation has a charge time (see: Configuration)
 - The lodestone must have at least 2 non-solid blocks above it.
 - The player will teleport 0.1 blocks above the center of the lodestone with their original orientation.
+
+### Usage in creative
+
+Because the datapack checks only the mainhand the renaming does not work in creative unless you equip the normal/untracked compass in your offhand and nothing in your mainhand. The reason being that the item that is renamed is always the item in the weapon.mainhand slot. In addition, using a tracked compass will always change the lore and name.
 
 ## Installation
 
