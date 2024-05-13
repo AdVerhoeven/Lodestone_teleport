@@ -2,9 +2,6 @@
 	"condition": "minecraft:entity_properties",
 	"entity": "this",
 	"predicate": {
-		"flags": {
-			"is_sneaking": true
-		},
 		"nbt": "{SelectedItem:{components:{\"minecraft:lodestone_tracker\":{target:{}}}}}"
 	}
 }

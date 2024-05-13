@@ -11,17 +11,11 @@ scoreboard players set #lodestone_teleport lodestone_teleport_c_animation 1
 
 # --- objectives ---
 scoreboard objectives add lodestone_teleport_cooldown dummy
-scoreboard objectives add lodestone_teleport_ok dummy
+scoreboard objectives add lodestone_teleport_allowed dummy
 scoreboard objectives add lodestone_teleport_notify dummy
-scoreboard objectives add lodestone_teleport_X dummy
-scoreboard objectives add lodestone_teleport_Y dummy
-scoreboard objectives add lodestone_teleport_Z dummy
 
 # --- defaults ---
-scoreboard players set @a lodestone_teleport_ok 0
-scoreboard players set @a lodestone_teleport_X 0
-scoreboard players set @a lodestone_teleport_Y 0
-scoreboard players set @a lodestone_teleport_Z 0
+scoreboard players set @a lodestone_teleport_allowed 1
 
 # --- finish install ---
 data modify storage lodestone_teleport:internal is_installed set value 1b

@@ -1,20 +1,16 @@
-scoreboard players set @s lodestone_teleport_ok 0
+tag @s add TeleportHelper
 
-#Start by summoning a dummy entity in the right dimension
-execute if predicate lodestone_teleport:lodestone_compass/lodestone_nether as @s in minecraft:the_nether run summon minecraft:marker 0 0 0 {Tags:[TeleportHelper]}
-execute if predicate lodestone_teleport:lodestone_compass/lodestone_end as @s in minecraft:the_end run summon minecraft:marker 0 0 0 {Tags:[TeleportHelper]}
-execute if predicate lodestone_teleport:lodestone_compass/lodestone_overworld as @s in minecraft:overworld run summon minecraft:marker 0 0 0 {Tags:[TeleportHelper]}
+# Call macro function for chunkloading and location checking.
+execute as @s run function lodestone_teleport:teleport_setup
 
-execute as @s run item modify entity @s weapon.mainhand lodestone_teleport:lodestone_compass/lodestone_lore
-execute as @s run item modify entity @s weapon.mainhand lodestone_teleport:lodestone_compass/lodestone_name
+# Modify compass lore and name (in case they have not been set when the compass was used on a lodestone)
+item modify entity @s weapon.mainhand lodestone_teleport:lodestone_compass/lodestone_full
 
-execute as @s run tag @s add TeleportHelper
+# Display teleport animation if configured.
 execute if score #lodestone_teleport lodestone_teleport_c_animation matches 1 as @s run function lodestone_teleport:teleport_animation
 playsound block.beacon.activate ambient @p ~ ~ ~ 1 1 1
 
-execute as @e[type=marker,tag=TeleportHelper,limit=1] run function lodestone_teleport:teleport_end
-
-tag @s remove TeleportHelper
 scoreboard players set @s lodestone_teleport_notify 1
+tag @s remove TeleportHelper
 
 advancement grant @s only global:lodestone_teleport/has_teleported

@@ -6,11 +6,8 @@ scoreboard objectives remove lodestone_teleport_c_animation
 
 # remove scoreboard objectives
 scoreboard objectives remove lodestone_teleport_cooldown
-scoreboard objectives remove lodestone_teleport_ok
+scoreboard objectives remove lodestone_teleport_allowed
 scoreboard objectives remove lodestone_teleport_notify
-scoreboard objectives remove lodestone_teleport_X
-scoreboard objectives remove lodestone_teleport_Y
-scoreboard objectives remove lodestone_teleport_Z
 
 advancement revoke @a from global:lodestone_teleport/datapack
 
@@ -20,4 +17,4 @@ datapack disable "lodestone_teleport_datapack"
 datapack disable "file/lodestone_teleport_datapack"
 data remove storage lodestone_teleport:internal is_installed
 reload
-tellraw @s [{"translate":"lodestone_teleport.title","fallback": "[lodestone_teleport] ","color": "gold"},{"text": "Uninstalled! safe to remove\n","color": "white"},{"text": "Warning! Reloading the world will reinstall unless the datapack is disabled!","color": "red"}]
+tellraw @s [{"translate":"lodestone_teleport.title","fallback": "[lodestone_teleport] ","color": "gold"},{"text": "Uninstalled! safe to remove\n","color": "white"},{"text": "Warning! Reloading the world could reinstall the datapack unless it is disabled!","color": "red"}]
