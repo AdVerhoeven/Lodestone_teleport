@@ -9,7 +9,7 @@
                 "color": "gold"
             },
             {
-                "translate": "lodestone_teleport.installed",
+                "translate": "lodestone_teleport.advancements.resourcepack.description",
                 "fallback": "Resourcepack missing!",
                 "color": "aqua"
             }

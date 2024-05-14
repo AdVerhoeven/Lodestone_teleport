@@ -3,14 +3,14 @@
         "title": [
             "",
             {
-                "translate": "lodestone_teleport.advancement.teleport.first.title",
+                "translate": "lodestone_teleport.advancements.teleport.first.title",
                 "fallback": "Your first teleportation!"
             }
         ],
         "description": [
             "",
             {
-                "translate": "lodestone_teleport.advancement.teleport.first.description",
+                "translate": "lodestone_teleport.advancements.teleport.first.description",
                 "fallback": "Luckily you arived at the destination in one piece.",
                 "color": "gold"
             }

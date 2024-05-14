@@ -1,6 +1,10 @@
 {
-	"lodestone_teleport.installed":"Resource pack enabled!",
+	"lodestone_teleport.advancements.datapack.description":"A datapack that allows teleporting after using a compass on a lodestone.",
+	"lodestone_teleport.advancements.resourcepack.description":"Resource pack enabled!",
 	"lodestone_teleport.title":"[lodestone_teleport] ",
+	"lodestone_teleport.madeby":"Made by ",
+	"lodestone_teleport.author":"Ad Verhoeven",
+
 	"lodestone_teleport.configure.menuname":"Help menu",
 	"lodestone_teleport.configure.action.click":"Click",
 	"lodestone_teleport.configure.change":" on what you want to change and enter the amount of ticks. ",
@@ -9,16 +13,19 @@
 	"lodestone_teleport.configure.charge":"- Change charge time",
 	"lodestone_teleport.configure.notify.chunkload":"- Notify chunkloading (1 = yes)",
 	"lodestone_teleport.configure.animation":"- Enable teleport animation (1 = yes)",
-	"lodestone_teleport.location_check":"Checking location",
-	"lodestone_teleport.location_unsafe":"Location is unsafe!",
-	"lodestone_teleport.success":"Teleport complete",
-	"lodestone_teleport.chunkload":"Loading chunks!",
-	"lodestone_teleport.chunkunload":"Unloading chunks!",
-	"lodestone_teleport.notify.teleport": "teleport",
-	"lodestone_teleport.notify.ready": "ready",
-	"lodestone_teleport.madeby":"Made by ",
-	"lodestone_teleport.author":"Ad Verhoeven",
-	"lodestone_teleport.advancement.teleport.first.title": "Your first teleportation!",
-	"lodestone_teleport.advancement.teleport.first.description": "Luckily you arived at the destination in one piece.",
-	"lodestone_teleport.compass.rename": "Your compass is magically renamed!"
+
+	"lodestone_teleport.notify.location_check":"Checking location",
+	"lodestone_teleport.notify.location_unsafe":"Location is unsafe!",
+	"lodestone_teleport.notify.success":"Teleport complete",
+	"lodestone_teleport.notify.chunkload":"Loading chunks!",
+	"lodestone_teleport.notify.chunkunload":"Unloading chunks!",
+	"lodestone_teleport.notify.teleport": "teleport ready",
+
+	"lodestone_teleport.compass.lore.overworld":"In the Overworld",
+	"lodestone_teleport.compass.lore.the_nether":"In the Nether",
+	"lodestone_teleport.compass.lore.the_end":"In the End",
+	"lodestone_teleport.compass.lore.other":"In a magical dimesnion",
+	"lodestone_teleport.advancements.teleport.first.title": "Your first teleportation!",
+	"lodestone_teleport.advancements.teleport.first.description": "Luckily you arived at the destination in one piece.",
+	"lodestone_teleport.notify.compass.rename": "Your compass is magically renamed!"
 }

@@ -6,11 +6,11 @@
 		},
 		"title": {
             "fallback": "Lodestone teleporation",
-			"translate": "advancement.lodestone_teleport.root.title"
+			"translate": "advancements.lodestone_teleport.root.title"
 		},
 		"description": {
             "fallback": "Lodestone compass teleportation advancements",
-			"translate": "advancement.lodestone_teleport.root.description"
+			"translate": "advancements.lodestone_teleport.root.description"
 		},
 		"background": "minecraft:textures/block/orange_terracotta.png",
 		"show_toast": false,

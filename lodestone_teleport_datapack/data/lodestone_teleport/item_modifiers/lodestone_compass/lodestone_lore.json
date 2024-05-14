@@ -42,7 +42,8 @@
         ],
         "lore": [
             {
-                "text": "In the Overworld",
+                "translate": "lodestone_teleport.compass.lore.overworld",
+                "fallback": "In the Overworld",
                 "color": "green",
                 "italic": false
             }
@@ -60,7 +61,8 @@
         ],
         "lore": [
             {
-                "text": "In the Nether",
+                "translate": "lodestone_teleport.compass.lore.the_nether",
+                "fallback": "In the Nether",                
                 "color": "red",
                 "italic": false
             }
@@ -78,11 +80,47 @@
         ],
         "lore": [
             {
-                "text": "In the End",
+                "translate": "lodestone_teleport.compass.lore.the_end",
+                "fallback": "In the End",
                 "color": "yellow",
                 "italic": false
             }
         ],
         "mode": "append"
-    }    
+    },
+    {
+        "function": "set_lore",
+        "entity": "this",
+        "conditions": [
+            {
+                "condition": "inverted",
+                "term": {
+                    "condition": "any_of",
+                    "terms": [
+                        {
+                            "condition": "minecraft:reference",
+                            "name":"lodestone_teleport:lodestone_compass/lodestone_end"
+                        },
+                        {
+                            "condition": "minecraft:reference",
+                            "name":"lodestone_teleport:lodestone_compass/lodestone_nether"
+                        },
+                        {
+                            "condition": "minecraft:reference",
+                            "name":"lodestone_teleport:lodestone_compass/lodestone_overworld"
+                        }
+                    ]
+                }
+            }
+        ],
+        "lore": [
+            {
+                "translate": "lodestone_teleport.compass.lore.other",
+                "fallback": "In a magical dimension",
+                "color": "dark_purple",
+                "italic": false
+            }
+        ],
+        "mode": "append"
+    }
 ]

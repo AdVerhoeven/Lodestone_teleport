@@ -1,23 +1,40 @@
 {
     "display": {
-        "title": "Quimoth",
-        "description": "Made by Ad Verhoeven",
+        "title": {
+            "translate": "lodestone_teleport.author",
+            "fallback": "Ad Verhoeven"
+        },
+        "description": [
+            {
+                "translate": "lodestone_teleport.madeby",
+                "fallback": "Made by "
+            },
+            {
+                "translate": "lodestone_teleport.author",
+                "fallback": "Ad Verhoeven"
+            }
+        ],
         "icon": {
             "item": "minecraft:player_head",
             "id": "minecraft:player_head",
-			"components": {
-				"minecraft:profile": {
+            "components": {
+                "minecraft:profile": {
                     "name": "Quimoth",
-                    "id": [-1332310245, 18697225, -1484544161, -859957986],
+                    "id": [
+                        -1332310245,
+                        18697225,
+                        -1484544161,
+                        -859957986
+                    ],
                     "properties": [
                         {
-                            "signature": "FBb1qxs98H6LvBMk6IWE5bWUduzVuys0691O+6oHIw8onUqXZcqRaZaoe+/WDTi6r6An4SjOqZlcpkgkIX1fnPMf/yrxD1HtYmmJLdgrWOr0GYluHv2yj5def8WO70engfv8supX39a99lAzpRzROPtlldH/VJ7n9yu9lQf6veA3bgXVP8WM8cQIqs6LW/kaVZxSleoN/vKfJg0x3aze2gZ2S0ekcd7u2jM/qR+zMdRHZXgh5WEgZsJpYizSsygF8w8krgVpwCyzD7Ifzz3XasCD8yzl+FbrsNz2Vog/5F9xnidaV6kR1pBDIcFbmEE3S0VRy0djIUYe5G94f8USmWg7k+hvwxVqBo4H/fk0Ub2J8GX9gJgWi/ZawoKue8MHNC6kY50L4kvBhTyTJjavZhPkIZCKqUXVpZdYJxvLq0+hbYHEQ81g6QS6fhKyfOCZxTcZcoxGYKrnZOc69lxNewUZoS8Q/8Lw7XasexT8nAwBMNBVXZaH+l5b1qjK0BhDcO8X8mzRkS+4sdusfaPygj35ctCC6TN/YhaMTnVyXTf00RenxQObyGFEGgbFvFBPfOH3w3AJ3OE7ycnL+8rMCJ2mUu1XwtPutMML38E8wUkv4Yl3wNDPnJ8wI/baoO1hkck2WL365ypAA/8eb7Z5w7VeW3LnpnU6bsOCZB+4ugs=", 
-                            "name": "textures", 
+                            "signature": "FBb1qxs98H6LvBMk6IWE5bWUduzVuys0691O+6oHIw8onUqXZcqRaZaoe+/WDTi6r6An4SjOqZlcpkgkIX1fnPMf/yrxD1HtYmmJLdgrWOr0GYluHv2yj5def8WO70engfv8supX39a99lAzpRzROPtlldH/VJ7n9yu9lQf6veA3bgXVP8WM8cQIqs6LW/kaVZxSleoN/vKfJg0x3aze2gZ2S0ekcd7u2jM/qR+zMdRHZXgh5WEgZsJpYizSsygF8w8krgVpwCyzD7Ifzz3XasCD8yzl+FbrsNz2Vog/5F9xnidaV6kR1pBDIcFbmEE3S0VRy0djIUYe5G94f8USmWg7k+hvwxVqBo4H/fk0Ub2J8GX9gJgWi/ZawoKue8MHNC6kY50L4kvBhTyTJjavZhPkIZCKqUXVpZdYJxvLq0+hbYHEQ81g6QS6fhKyfOCZxTcZcoxGYKrnZOc69lxNewUZoS8Q/8Lw7XasexT8nAwBMNBVXZaH+l5b1qjK0BhDcO8X8mzRkS+4sdusfaPygj35ctCC6TN/YhaMTnVyXTf00RenxQObyGFEGgbFvFBPfOH3w3AJ3OE7ycnL+8rMCJ2mUu1XwtPutMML38E8wUkv4Yl3wNDPnJ8wI/baoO1hkck2WL365ypAA/8eb7Z5w7VeW3LnpnU6bsOCZB+4ugs=",
+                            "name": "textures",
                             "value": "ewogICJ0aW1lc3RhbXAiIDogMTcxNTYzNzgwOTc5NiwKICAicHJvZmlsZUlkIiA6ICJiMDk2OGYxYjAxMWQ0YzA5YTc4M2E3NWZjY2JlMTUxZSIsCiAgInByb2ZpbGVOYW1lIiA6ICJRdWltb3RoIiwKICAic2lnbmF0dXJlUmVxdWlyZWQiIDogdHJ1ZSwKICAidGV4dHVyZXMiIDogewogICAgIlNLSU4iIDogewogICAgICAidXJsIiA6ICJodHRwOi8vdGV4dHVyZXMubWluZWNyYWZ0Lm5ldC90ZXh0dXJlLzkxMDZkYWU2NDdmNzI3YzZkMDY2OTM2ZmYwMDE0YmY5N2RhNGY2OTBkMzNkMjdmNGU0ZWRmZjhjNjU0NWY3YTUiCiAgICB9CiAgfQp9"
                         }
                     ]
                 }
-			},
+            },
             "count": 1
         },
         "show_toast": false,
