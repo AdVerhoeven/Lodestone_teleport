@@ -1,0 +1,10 @@
+[
+	{
+		"function": "minecraft:reference",
+		"name": "lodestone_teleport:lodestone_compass/lodestone_lore"
+	},
+	{
+		"function": "minecraft:reference",
+        "name": "lodestone_teleport:lodestone_compass/lodestone_name"
+	}
+]
