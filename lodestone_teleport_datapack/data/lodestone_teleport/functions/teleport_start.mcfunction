@@ -7,10 +7,10 @@ execute as @s run function lodestone_teleport:teleport_setup
 item modify entity @s weapon.mainhand lodestone_teleport:lodestone_compass/lodestone_full
 
 # Display teleport animation if configured.
-execute if score #lodestone_teleport lodestone_teleport_c_animation matches 1 as @s run function lodestone_teleport:teleport_animation
+execute if score #lodestone_teleport lodestone_teleport.c.animation matches 1 as @s run function lodestone_teleport:teleport_animation
 playsound block.beacon.activate ambient @p ~ ~ ~ 1 1 1
 
-scoreboard players set @s lodestone_teleport_notify 1
+execute store result score @s lodestone_teleport.notify run scoreboard players get #lodestone_teleport lodestone_teleport.c.notify_cooldown
 tag @s remove TeleportHelper
 
-advancement grant @s only global:lodestone_teleport/has_teleported
+advancement grant @s only lodestone_teleport:has_teleported

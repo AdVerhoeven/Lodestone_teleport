@@ -1,0 +1,25 @@
+{
+    "display": {
+		"icon": {
+			"id": "minecraft:compass",
+			"count": 1
+		},
+		"title": {
+            "fallback": "Lodestone teleporation",
+			"translate": "advancement.lodestone_teleport.root.title"
+		},
+		"description": {
+            "fallback": "Lodestone compass teleportation advancements",
+			"translate": "advancement.lodestone_teleport.root.description"
+		},
+		"background": "minecraft:textures/block/orange_terracotta.png",
+		"show_toast": false,
+		"announce_to_chat": false
+	},
+    "criteria": {
+        "trigger": {
+            "trigger": "minecraft:tick"
+        }
+    },
+	"sends_telemetry_event": false
+}

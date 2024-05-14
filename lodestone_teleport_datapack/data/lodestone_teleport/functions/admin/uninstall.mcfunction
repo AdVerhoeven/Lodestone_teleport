@@ -1,13 +1,14 @@
 # remove scoreboard constants
-scoreboard objectives remove lodestone_teleport_c_cooldown
-scoreboard objectives remove lodestone_teleport_c_charge
-scoreboard objectives remove lodestone_teleport_c_notify_chunkload
-scoreboard objectives remove lodestone_teleport_c_animation
+scoreboard objectives remove lodestone_teleport.c.cooldown
+scoreboard objectives remove lodestone_teleport.c.charge
+scoreboard objectives remove lodestone_teleport.c.notify_chunkload
+scoreboard objectives remove lodestone_teleport.c.animation
+scoreboard objectives remove lodestone_teleport.c.notify_cooldown
 
 # remove scoreboard objectives
-scoreboard objectives remove lodestone_teleport_cooldown
-scoreboard objectives remove lodestone_teleport_allowed
-scoreboard objectives remove lodestone_teleport_notify
+scoreboard objectives remove lodestone_teleport.cooldown
+scoreboard objectives remove lodestone_teleport.allowed
+scoreboard objectives remove lodestone_teleport.notify
 
 advancement revoke @a from global:lodestone_teleport/datapack
 
