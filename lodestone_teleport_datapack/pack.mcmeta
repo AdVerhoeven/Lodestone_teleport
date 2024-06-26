@@ -1,7 +1,7 @@
 {
     "id": "lodestone_teleport",
     "pack": {
-        "pack_format": 41,
+        "pack_format": 48,
         "description": "Allows teleporting through the use of lodestone compasses."
     }
 }
