@@ -10,8 +10,10 @@ This datapack has been updated to work with packversion 41 for minecraft java ed
 
 ### Item changes
 
-* Using a compass on a lodestone will change its name and lore.
-* Sneaking while holding a compass that is lodestone tracked will teleport the player to the target location (does not require the name/lore)
+- Using a compass on a lodestone will change its name and lore.
+- The lore and name changes are done using item modifiers. Vanilla dimensions have some unique colors and the specific dimension text can be changed using a resourcepack with a lang folder. Any non-vanilla dimensions use the lodestone_compass.lore.other.
+- Adding custom dimension lore/color can be done by changing the corresponding item_modifier files.
+- Sneaking while holding a compass that is lodestone tracked will teleport the player to the target location (does not require the name/lore)
 
 ### Advancements
 
@@ -23,6 +25,7 @@ This datapack has been updated to work with packversion 41 for minecraft java ed
 
 ### Teleportation rules
 
+- The player must have a score of 1 or higher for lodestone_teleport.teleport_allowed.
 - The player must be touching the ground.
 - The player must be sneaking.
 - The player must be holding a compass in their mainhand. (weapon.mainhand slot)
@@ -34,7 +37,9 @@ This datapack has been updated to work with packversion 41 for minecraft java ed
 
 ### Usage in creative
 
-Because the datapack checks only the mainhand the renaming does not work in creative unless you equip the normal/untracked compass in your offhand and nothing in your mainhand. The reason being that the item that is renamed is always the item in the weapon.mainhand slot. In addition, using a tracked compass will always change the lore and name.
+Because the datapack checks only the mainhand the renaming does not work in creative unless you equip the normal/untracked compass in your offhand and nothing in your mainhand. The reason being that the item that is renamed is always the item in the weapon.mainhand slot. In addition, teleporting using a tracked compass will always change the lore and name of the compass that was used.
+
+Bug: if you use a compass from your mainhand its lore and name will change and it will display the placeholder magical dimension lore.
 
 ## Installation
 
@@ -53,12 +58,6 @@ Other admin/configuration functions:
 - **lodestone_teleport:admin/install**, does not have to be called manually as it should be called upon (re-)loading your world.
 
 - **lodestone_teleport:admin/uninstall**, should remove most scoreboard entries and achievements, will only do a soft reset if the datapack has an unexpected name or location. It would be best to double check the exact name and location yourself by calling /datapack list and copying the name for this datapack into the uninstall function.
-
-## Wishes
-
-This datapack was not tested for multiplayer, it will probably result in unreliable outcomes when multiple players teleport at the same time.
-
-A remedy for this would involve storing the UUID of the player and/or the target entity to ensure the right player teleports to the right target.
 
 
 
