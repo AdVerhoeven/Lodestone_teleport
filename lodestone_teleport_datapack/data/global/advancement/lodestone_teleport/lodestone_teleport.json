@@ -15,7 +15,6 @@
             }
         ],
         "icon": {
-            "item": "minecraft:player_head",
             "id": "minecraft:player_head",
             "components": {
                 "minecraft:profile": {
