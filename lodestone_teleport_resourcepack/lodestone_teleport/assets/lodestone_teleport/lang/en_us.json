@@ -19,13 +19,18 @@
 	"lodestone_teleport.notify.success":"Teleport complete",
 	"lodestone_teleport.notify.chunkload":"Loading chunks!",
 	"lodestone_teleport.notify.chunkunload":"Unloading chunks!",
-	"lodestone_teleport.notify.teleport": "Teleport %s!",
+	"lodestone_teleport.notify.teleport": "Teleport %s",
 	"lodestone-teleport.notify.ready": "ready",
+
+	"lodestone_teleport.dimension.overworld": "The Overworld",
+	"lodestone_teleport.dimension.the_nether": "The Nether",
+	"lodestone_teleport.dimension.the_end": "The End",
+	"lodestone_tleeport.dimension.other": "Magical dimension",
 
 	"lodestone_teleport.compass.lore.overworld":"In the Overworld",
 	"lodestone_teleport.compass.lore.the_nether":"In the Nether",
 	"lodestone_teleport.compass.lore.the_end":"In the End",
-	"lodestone_teleport.compass.lore.other":"In a magical dimesnion",
+	"lodestone_teleport.compass.lore.other":"In %s",
 	"lodestone_teleport.advancements.teleport.first.title": "Your first teleportation!",
 	"lodestone_teleport.advancements.teleport.first.description": "Luckily you arived at the destination in one piece.",
 	"lodestone_teleport.notify.compass.rename": "Your compass is magically renamed!"
