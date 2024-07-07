@@ -1,2 +1,2 @@
 tellraw @p ["",{"translate":"lodestone_teleport.title","fallback": "[lodestone_teleport]","color": "gold"}]
-tellraw @p ["",{"translate":"lodestone_teleport.madeby","fallback": "Made by ","color": "green"},{"translate":"lodestone_teleport.author","fallback": "Ad Verhoeven","underlined": true,"color": "gold"}]
+tellraw @p ["",{"translate":"lodestone_teleport.madeby","fallback": "Made by %s","color": "green", "with":[{"translate":"lodestone_teleport.author","fallback": "Ad Verhoeven","underlined": true,"color": "gold"}]}]

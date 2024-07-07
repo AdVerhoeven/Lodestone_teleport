@@ -2,7 +2,7 @@
 	"lodestone_teleport.advancements.datapack.description":"A datapack that allows teleporting after using a compass on a lodestone.",
 	"lodestone_teleport.advancements.resourcepack.description":"Resource pack enabled!",
 	"lodestone_teleport.title":"[lodestone_teleport] ",
-	"lodestone_teleport.madeby":"Made by ",
+	"lodestone_teleport.madeby":"Made by %s",
 	"lodestone_teleport.author":"Ad Verhoeven",
 
 	"lodestone_teleport.configure.menuname":"Help menu",
