@@ -1,6 +1,7 @@
 {
 	"pack": {
 		"pack_format": 34,
+		"supported_formats": [30,34],
 		"description": "Resources for lodestone_teleport datapack"
 	},
 	"language": {
