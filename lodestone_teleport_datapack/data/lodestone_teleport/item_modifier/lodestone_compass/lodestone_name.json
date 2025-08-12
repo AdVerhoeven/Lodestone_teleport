@@ -1,0 +1,134 @@
+[
+    {
+        "function": "set_name",
+        "entity": "this",
+        "target": "item_name",
+        "conditions": [
+            {
+                "condition": "reference",
+                "name": "lodestone_teleport:lodestone_compass/lodestone_overworld"
+            }
+        ],
+        "name": [
+            {
+                "translate": "lodestone_teleport.dimension.overworld",
+                "fallback": "The Overworld: ",
+                "color": "green",
+                "italic": false,
+                "extra": [
+                    {
+                        "text": ": "
+                    },
+                    {
+                        "nbt": "SelectedItem.components.minecraft:lodestone_tracker.target.pos[]",
+                        "entity": "@s",
+                        "separator": {"text": " / "}
+                    }
+                ]
+            }
+        ]
+    },
+    {
+        "function": "set_name",
+        "entity": "this",
+        "target": "item_name",
+        "conditions": [
+            {
+                "condition": "reference",
+                "name": "lodestone_teleport:lodestone_compass/lodestone_nether"
+            }
+        ],
+        "name": [
+            {
+                "translate": "lodestone_teleport.dimension.the_nether",
+                "fallback": "The Nether: ",
+                "color": "red",
+                "italic": false,
+                "extra": [
+                    {
+                        "text": ": "
+                    },
+                    {
+                        "nbt": "SelectedItem.components.minecraft:lodestone_tracker.target.pos[]",
+                        "entity": "@s",
+                        "separator": {"text": " / "}
+                    }
+                ]
+            }
+        ]
+    },
+    {
+        "function": "set_name",
+        "entity": "this",
+        "target": "item_name",
+        "conditions": [
+            {
+                "condition": "reference",
+                "name": "lodestone_teleport:lodestone_compass/lodestone_end"
+            }
+        ],
+        "name": [
+            {
+                "translate": "lodestone_teleport.dimension.the_end",
+                "fallback": "The End: ",
+                "color": "yellow",
+                "italic": false,
+                "extra": [
+                    {
+                        "text": ": "
+                    },
+                    {
+                        "nbt": "SelectedItem.components.minecraft:lodestone_tracker.target.pos[]",
+                        "entity": "@s",
+                        "separator": {"text": " / "}
+                    }
+                ]
+            }
+        ]
+    },
+    {
+        "function": "set_name",
+        "entity": "this",
+        "target": "item_name",
+        "conditions":[
+            {
+                "condition": "inverted",
+                "term": {
+                    "condition": "any_of",
+                    "terms": [
+                        {
+                            "condition": "minecraft:reference",
+                            "name": "lodestone_teleport:lodestone_compass/lodestone_end"
+                        },
+                        {
+                            "condition": "minecraft:reference",
+                            "name": "lodestone_teleport:lodestone_compass/lodestone_nether"
+                        },
+                        {
+                            "condition": "minecraft:reference",
+                            "name": "lodestone_teleport:lodestone_compass/lodestone_overworld"
+                        }
+                    ]
+                }
+            }
+        ],
+        "name": [
+            {
+                "translate": "lodestone_teleport.dimension.other",
+                "fallback": "Magical dimension: ",
+                "color": "dark_purple",
+                "italic": false,
+                "extra": [
+                    {
+                        "text": ": "
+                    },
+                    {
+                        "nbt": "SelectedItem.components.minecraft:lodestone_tracker.target.pos[]",
+                        "entity": "@s",
+                        "separator": {"text": " / "}
+                    }
+                ]
+            }
+        ]
+    }
+]

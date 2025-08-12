@@ -6,7 +6,6 @@
             "fallback": "A datapack that allows teleporting after using a compass on a lodestone."
         },
         "icon": {
-            "item": "minecraft:lodestone",
             "id": "minecraft:lodestone",
 			"components": {
 				"minecraft:enchantment_glint_override": true

@@ -3,7 +3,6 @@
         "title": "Installed Datapacks",
         "description": "",
         "icon": {
-            "item": "knowledge_book",
             "id": "knowledge_book",
             "count": 1
         },

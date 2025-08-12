@@ -9,22 +9,9 @@
                 "italic": false,
                 "extra": [
                     {
-                        "nbt": "SelectedItem.components.minecraft:lodestone_tracker.target.pos[0]",
-                        "entity": "@s"
-                    },
-                    {
-                        "text": " / "
-                    },
-                    {
-                        "nbt": "SelectedItem.components.minecraft:lodestone_tracker.target.pos[1]",
-                        "entity": "@s"
-                    },
-                    {
-                        "text": " / "
-                    },
-                    {
-                        "nbt": "SelectedItem.components.minecraft:lodestone_tracker.target.pos[2]",
-                        "entity": "@s"
+                        "nbt": "SelectedItem.components.minecraft:lodestone_tracker.target.pos[]",
+                        "entity": "@s",
+                        "separator": {"text":" / "}
                     }
                 ]
             }
@@ -62,7 +49,7 @@
         "lore": [
             {
                 "translate": "lodestone_teleport.compass.lore.the_nether",
-                "fallback": "In the Nether",                
+                "fallback": "In the Nether",
                 "color": "red",
                 "italic": false
             }
@@ -99,15 +86,15 @@
                     "terms": [
                         {
                             "condition": "minecraft:reference",
-                            "name":"lodestone_teleport:lodestone_compass/lodestone_end"
+                            "name": "lodestone_teleport:lodestone_compass/lodestone_end"
                         },
                         {
                             "condition": "minecraft:reference",
-                            "name":"lodestone_teleport:lodestone_compass/lodestone_nether"
+                            "name": "lodestone_teleport:lodestone_compass/lodestone_nether"
                         },
                         {
                             "condition": "minecraft:reference",
-                            "name":"lodestone_teleport:lodestone_compass/lodestone_overworld"
+                            "name": "lodestone_teleport:lodestone_compass/lodestone_overworld"
                         }
                     ]
                 }
@@ -116,7 +103,12 @@
         "lore": [
             {
                 "translate": "lodestone_teleport.compass.lore.other",
-                "fallback": "In a magical dimension",
+                "fallback": "In %s",
+                "with": [
+                    {
+                        "translate": "lodestone_teleport.dimension.other"
+                    }
+                ],
                 "color": "dark_purple",
                 "italic": false
             }

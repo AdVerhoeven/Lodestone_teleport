@@ -1,0 +1,45 @@
+{
+    "type": "minecraft:confirmation",
+    "title": "Set cooldown time in ticks",
+    "external_title": "lodestone teleport cooldown",
+    "body": [
+        {
+            "type": "minecraft:plain_message",
+            "contents": [
+                {
+                    "text": "Set the cooldown between teleports.\n"
+                },
+                {
+                    "text": "Note that this has no effects when it is below the charge time",
+                    "italic": true
+                }
+            ]
+        }
+    ],
+    "inputs": [
+        {
+            "type": "minecraft:number_range",
+            "key": "cooldown",
+            "width": 200,
+            "label": "cooldown",
+            "start": 5,
+            "end": 100,
+            "step": 1,
+            "initial": 40
+        }
+    ],
+    "can_close_with_escape": true,
+    "pause": false,
+    "yes": {
+        "label": "Confirm",
+        "tooltip": "Confirm and apply changes",
+        "width": 200,
+        "action": {
+            "type": "minecraft:dynamic/run_command",
+            "template": "scoreboard players set #lodestone_teleport lodestone_teleport.c.cooldown $(cooldown)"
+        }
+    },
+    "no": {
+        "label": "Back"
+    }
+}
