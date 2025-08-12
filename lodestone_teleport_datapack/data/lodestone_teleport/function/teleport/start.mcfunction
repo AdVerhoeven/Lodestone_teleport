@@ -1,7 +1,7 @@
 tag @s add lodestone_teleport.TeleportHelper
 
 # Call macro function for chunkloading and location checking.
-execute as @s run function lodestone_teleport:teleport/setup
+function lodestone_teleport:teleport/setup
 
 # Modify compass lore and name (in case they have not been set when the compass was used on a lodestone)
 item modify entity @s weapon.mainhand lodestone_teleport:lodestone_compass/lodestone_full
