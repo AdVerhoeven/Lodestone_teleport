@@ -1,0 +1,45 @@
+{
+	"type": "minecraft:confirmation",
+	"title": "Set charge time in ticks",
+	"external_title": "lodestone teleport charge time",
+	"body": [
+		{
+			"type": "minecraft:plain_message",
+			"contents": [
+				{
+					"text": "Set the charge time in ticks before the player will teleport"
+				},
+				{
+					"text": "Charging starts when the player sneaks while holding a compass that is liked to a lodestone",
+					"italic": true
+				}
+			]
+		}
+	],
+	"inputs": [
+		{
+			"type": "minecraft:number_range",
+			"key": "charge_time",
+			"width": 200,
+			"label": "charge time",
+			"start": 1,
+			"end": 100,
+			"step": 1,
+			"initial": 20
+		}
+	],
+	"can_close_with_escape": true,
+	"pause": false,
+	"yes": {
+		"label": "Confirm",
+		"tooltip": "Confirm and apply changes",
+		"width": 200,
+		"action": {
+			"type": "minecraft:dynamic/run_command",
+			"template": "scoreboard players set #lodestone_teleport lodestone_teleport.c.charge $(charge_time)"
+		}
+	},
+	"no": {
+		"label": "Back"
+	}
+}

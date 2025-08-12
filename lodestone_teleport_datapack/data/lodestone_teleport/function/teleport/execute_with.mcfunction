@@ -1,5 +1,5 @@
 # The following line could be used to debug a little bit.
-# $tellraw @a[tag=TeleportHelper,nbt={UUID:$(playerid)}] "Data: x:$(x), y:$(y), z:$(z), yaw:$(yaw), pitch:$(pitch), dimension:$(dimension), id:$(playerid)"
+$tellraw @a[nbt={UUID:$(playerid)}] "Data: {x: $(x), y: $(y), z: $(z), yaw: $(yaw), pitch: $(pitch), dimension: \"$(dimension)\", id: $(playerid)}"
 
 $execute if score #lodestone_teleport lodestone_teleport.c.notify_chunkload matches 1.. run tellraw @p[tag=lodestone_teleport.TeleportHelper,nbt={UUID:$(playerid)}] [{"text": "[lodestone_teleport] ","color": "gold"},{"text": "Force loading target chunk!","color": "red"}]
 
@@ -13,7 +13,7 @@ $execute if score #lodestone_teleport lodestone_teleport.c.notify_chunkload matc
 $tellraw @p[tag=lodestone_teleport.TeleportHelper,nbt={UUID:$(playerid)}] [{"translate": "lodestone_teleport.title","fallback": "[lodestone_teleport] ", "color": "gold"},{"translate":"lodestone_teleport.location_check","fallback": "Checking location","color": "yellow"}]
 
 # Check location, run abort function if unsafe
-$execute in $(dimension) positioned $(x) $(y) $(z) unless predicate lodestone_teleport:safe_teleport run return run function lodestone_teleport:teleport_unsafe {x:$(x),y:$(y),z:$(z),dimension:"$(dimension)",playerid:"$(playerid)"}
+$execute in $(dimension) positioned $(x) $(y) $(z) unless predicate lodestone_teleport:safe_teleport run return run function lodestone_teleport:teleport/unsafe {x:$(x),y:$(y),z:$(z),dimension:"$(dimension)",playerid:"$(playerid)"}
 
 # Actual player teleport
 $execute in $(dimension) positioned $(x) $(y) $(z) rotated $(yaw) $(pitch) run tp @a[tag=lodestone_teleport.TeleportHelper,nbt={UUID:$(playerid)}] ~ ~1 ~ ~ ~

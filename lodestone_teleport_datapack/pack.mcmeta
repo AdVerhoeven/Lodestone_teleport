@@ -2,6 +2,18 @@
     "id": "lodestone_teleport",
     "pack": {
         "pack_format": 48,
+        "supported_formats": [48,70],
         "description": "Allows teleporting through the use of lodestone compasses."
+    },
+    "overlays": {
+        "entries": [
+            {
+                "directory": "1_21_6_dialogs",
+                "formats": [
+					71,
+					81
+				]
+            }
+        ]
     }
 }

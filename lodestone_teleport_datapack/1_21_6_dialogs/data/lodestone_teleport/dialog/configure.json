@@ -1,0 +1,13 @@
+{
+    "type": "minecraft:dialog_list",
+    "title": "Configure lodestone teleportation",
+    "external_title": "Lodestone Teleport",
+    "can_close_with_escape": true,
+    "pause": false,
+    "dialogs": [
+        "lodestone_teleport:charge_time",
+        "lodestone_teleport:cooldown",
+        "lodestone_teleport:notify_chunkload",
+        "lodestone_teleport:teleport_animation"
+    ]
+}

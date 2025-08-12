@@ -16,5 +16,5 @@ execute store result entity @n[type=marker,tag=lodestone_teleport.TeleportHelper
 execute store result entity @n[type=marker,tag=lodestone_teleport.TeleportHelper] data.lodestone_teleport:target.z double 1 run data get entity @s SelectedItem.components.minecraft:lodestone_tracker.target.pos[2]
 
 # execute macro function using the lodestone_teleport:target component
-execute as @n[type=marker,tag=lodestone_teleport.TeleportHelper] run function lodestone_teleport:teleport_execute_with with entity @e[type=marker,tag=lodestone_teleport.TeleportHelper,sort=nearest,limit=1] data.lodestone_teleport:target
+execute as @n[type=marker,tag=lodestone_teleport.TeleportHelper] run function lodestone_teleport:teleport/execute_with with entity @e[type=marker,tag=lodestone_teleport.TeleportHelper,sort=nearest,limit=1] data.lodestone_teleport:target
 tag @s remove lodestone_teleport.TeleportHelper
